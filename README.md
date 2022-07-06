@@ -1,5 +1,5 @@
 # 응용확률통계 8장 일원배치분산분석 계산기
-👉🏻 https://jaewoogwak.github.io/caca/ 
+## 👉🏻 https://jaewoogwak.github.io/caca/ 
 ## 사용 방법
 
 모집단을 폼에 콤마로 구분해서 넣어주기만 하면 끝입니다.
