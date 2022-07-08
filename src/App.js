@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import styled from "styled-components";
 
 function App() {
   const [k, setK] = useState(0);
@@ -37,16 +38,56 @@ function App() {
     getXMinusXvar();
   }, [mAvg1, mAvgAarr1]);
   return (
-    <div className="App">
-      <h1>모집단을 1, 2, 3 .. 이런 식으로 콤마로 구분해서 넣어주기</h1>
-
-      <input name="1" placeholder="모집단1 넣기" onChange={onChange}></input>
-      <p>평균1 : {mAvg1} </p>
-      <p>
-        모집단의 {"("}표본 - 위에서 구한 평균{")^2"} : {XMinusAvg}
-      </p>
-    </div>
+    <Wrapper>
+      <Inner>
+        <Title>평균 및 편차제곱 계산기</Title>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <DataInput
+            name="1"
+            placeholder="모집단1 넣기"
+            onChange={onChange}
+          ></DataInput>
+          <Text>평균1 : {mAvg1} </Text>
+          <Text>
+            모집단의 {"("}표본 - 위에서 구한 평균{")^2"} : {XMinusAvg}
+          </Text>
+        </div>
+      </Inner>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div``;
+const Inner = styled.div`
+  position: absolute;
+  border: 0.5px solid gray;
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+`;
+const Title = styled.h1`
+  text-align: center;
+`;
+const DataInput = styled.input`
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  margin-top: 40px;
+`;
+const Text = styled.p`
+  text-align: center;
+`;
 
 export default App;
