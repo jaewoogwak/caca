@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/caca/static/css/main.e6c13ad2.css",
-    "main.js": "/caca/static/js/main.66bfd344.js",
-    "static/js/787.8be9f8e2.chunk.js": "/caca/static/js/787.8be9f8e2.chunk.js",
-    "index.html": "/caca/index.html",
-    "main.e6c13ad2.css.map": "/caca/static/css/main.e6c13ad2.css.map",
-    "main.66bfd344.js.map": "/caca/static/js/main.66bfd344.js.map",
-    "787.8be9f8e2.chunk.js.map": "/caca/static/js/787.8be9f8e2.chunk.js.map"
+    "main.css": "/parameter-calculator/static/css/main.e6c13ad2.css",
+    "main.js": "/parameter-calculator/static/js/main.3a0f947c.js",
+    "static/js/787.8be9f8e2.chunk.js": "/parameter-calculator/static/js/787.8be9f8e2.chunk.js",
+    "index.html": "/parameter-calculator/index.html",
+    "main.e6c13ad2.css.map": "/parameter-calculator/static/css/main.e6c13ad2.css.map",
+    "main.3a0f947c.js.map": "/parameter-calculator/static/js/main.3a0f947c.js.map",
+    "787.8be9f8e2.chunk.js.map": "/parameter-calculator/static/js/787.8be9f8e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.66bfd344.js"
+    "static/js/main.3a0f947c.js"
   ]
 }
