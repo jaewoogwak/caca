@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# 응용확률통계 평균 및 분산 계산기
+## 👉🏻 https://jaewoogwak.github.io/caca/ 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## [활용] : 응용확률통계 8장 일원배치분산분석
 
-## Available Scripts
+모집단을 폼에 콤마로 구분해서 넣어주기만 하면 끝입니다.
 
-In the project directory, you can run:
+예제로 설명드리겠습니다.
 
-### `yarn start`
+![tempImg 9](https://user-images.githubusercontent.com/62415600/177555905-166110b3-3b48-4328-bf3a-29f8a6201e15.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+위에서 모집단 `A의 평균`과 `(Xa - X의 평균)^2`만 알면 SST, SSE를 구할 수 있으니 자유도를 구해서 MST, MSE까지 구할 수 있게 됩니다.
 
-### `yarn test`
+모집단 A에 대한 결과를 알고 싶으면 폼에다가 `290, 265, ... 293` 이렇게 콤마로 구분해서 입력해주세요.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+그리고 결과로 얻은 각각의 모집단에 대해 `평균`과 `(X - X의 평균)^2` 값을 기록해둡시다. (이것만 기록해두고 계산기 한번 쓰면 끝입니다)
 
-### `yarn build`
+위의 예제 기준으로 `A의 평균`은 280.5, `B의 평균`은 265.1 `C의 평균`은 264.8입니다. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+그리고 각각의 `(X - X의 평균)^2`는 1738.5, 1520.899, 947.6이 나옵니다. (소수점 쪼금 달라도 괜찮습니다)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+그럼 이제 `SSt`는 위에서 구한 `A의 평균`은 280.5, `B의 평균`은 265.1 `C의 평균`은 264.8를 하나의 모집단으로 보고 다시 폼에 넣어주면
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`(표본평균X - 표본평균X의 평균(전체평균))^2`을 구하는 것이나 마찬가지입니다.
 
-### `yarn eject`
+그러면 `SSt`는 위에 구한 `(표본평균X - 표본평균X의 평균(전체평균))^2`에 `n`만 곱해주면 됩니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`n`은 10이니 답은 1612.46이 나오게 됩니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`SSE`는 각각의 `(X - X의 평균)^2` 1738.5, 1520.899, 947.6를 더해주면 끝입니다. 4206.99가 나옵니다.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
