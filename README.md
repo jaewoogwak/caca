@@ -1,5 +1,5 @@
 # 응용확률통계 평균 및 분산 계산기
-## 👉🏻 https://jaewoogwak.github.io/caca/ 
+## 👉🏻 https://jaewoogwak.github.io/parameter-calculator/
 
 ## [활용] : 응용확률통계 8장 일원배치분산분석
 
